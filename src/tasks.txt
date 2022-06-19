@@ -1,0 +1,8 @@
+[] add firebase authentication (google-provider).
+[] add testing
+[] add github actions
+[] deploy to heroku
+...........
+[] frontend data validation with joi
+...........
+[] Learn heroku CLI
