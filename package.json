@@ -5,7 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "nodemon ./src/v1/api/server.js"
+        "start": "env-cmd -f ./src/v1/api/config/config.env nodemon ./src/v1/api/server.js"
     },
     "repository": {
         "type": "git",
@@ -19,7 +19,11 @@
     },
     "homepage": "https://github.com/naadir77/solution-backend#readme",
     "dependencies": {
-        "express": "^4.18.1"
+        "dotenv": "^16.0.1",
+        "env-cmd": "^10.1.0",
+        "express": "^4.18.1",
+        "mongoose": "^6.4.0",
+        "morgan": "^1.10.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.16"
