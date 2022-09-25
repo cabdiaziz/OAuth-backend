@@ -20,12 +20,12 @@ const register = async (req, res) => {
     if (user) return res.status(200).send({ msg: "you are already registerd" });
 
     const newUser = await new User(req.body.user);
-    newUser.userName = req.body.user.displayName;
+    newUser.userName = req.body.user.userName;
 
     return newUser
       .save()
       .then(() => {
-        return res.status(201).json(newUser);
+        return res.status(201).json({ newUser });
       })
       .catch((err) => {
         return res.status(400).json(err.message);

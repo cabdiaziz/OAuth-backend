@@ -1,8 +1,13 @@
-[] add firebase authentication (google-provider).
-[] add testing
+[x] add firebase authentication (google-provider).
+[] add testing jest, supertest.
 [] add github actions
 [] deploy to heroku
 ...........
 [] frontend data validation with joi
 ...........
 [] Learn heroku CLI
+
+.................
+[ ] test notification service to simple 
+-build function called serchExpiredDates();
+-build function called sendNotificationToTheAdmin();

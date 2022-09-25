@@ -13,7 +13,7 @@ import notFoundMiddleware from "./middleware/notFoundPage.js";
 import errorHandlerMiddleware from "./middleware/error-handler.js";
 
 import userRouter from "./routes/userRoutes.js";
-import serviceRouter from "./routes/serviceRoutes.js";
+import usersCardRouter from "./routes/usersCardRoutes.js";
 
 //*database connection
 databaseConnection();
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1/user", userRouter);
-app.use("/api/v1/service", serviceRouter);
+app.use("/api/v1/service", usersCardRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);

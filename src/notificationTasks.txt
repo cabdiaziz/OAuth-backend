@@ -1,0 +1,3 @@
+[ ] create a loop to search an expired date inside user's card.
+[ ] design api for notifications
+[ ] design a recall api from server using foreach
